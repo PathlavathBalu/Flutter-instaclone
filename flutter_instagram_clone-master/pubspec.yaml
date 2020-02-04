@@ -1,0 +1,193 @@
+name: flutter_instagram_clone
+description: A new Flutter project.
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.2
+  firebase_core: ^0.4.0+9
+  firebase_analytics: ^5.0.2
+  firebase_auth: ^0.14.0+5
+  cloud_firestore: ^0.12.9+4
+  image_picker: ^0.6.1+4
+  cached_network_image: ^2.0.0-rc
+  firebase_storage: ^3.0.6
+  flutter_image_compress: ^0.6.3
+  path_provider: ^1.2.0
+  uuid: ^2.0.2
+  provider: ^3.2.0
+  image_cropper: ^1.1.0
+  animator: ^1.0.0+3
+  intl: ^0.16.0
+  http: ^0.12.0+2
+  youtube_player_flutter: ^6.0.3+2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+   - assets/images/
+   - assets/images/blue.jpg
+   - assets/images/plansbg.png
+   - assets/images/rgv_image.jpg
+   - assets/images/Ram_Gopal_Varma.webp
+   - assets/images/ram-gopal-varma.gif
+   - assets/images/TH-7-STAR-RGV.jpeg   
+   - assets/images/shivamovie.jpg
+   - assets/images/kshanakshanam.jpg   
+   - assets/images/gaayam.jpg
+   - assets/images/govinda.jpg
+   - assets/images/Rangeela.jpg
+   - assets/images/great.jpg   
+   - assets/images/satya.jpg
+   - assets/images/dilse.jpg
+   - assets/images/mast.jpg
+   - assets/images/shool.jpg
+   - assets/images/Jungle.jpg
+   - assets/images/Company.jpg
+   - assets/images/Road.jpg
+   - assets/images/Bhoot.jpg
+   - assets/images/darna.jpg
+   - assets/images/Ek.jpg   
+   - assets/images/Ab.jpg
+   - assets/images/gayab.jpg
+   - assets/images/Vaastu_Shastra.jpg
+   - assets/images/Naach.jpg   
+   - assets/images/mr_miss.jpg
+   - assets/images/Sarkar.jpg
+   - assets/images/murder.jpg
+   - assets/images/Darna_Zarrori.jpg 
+   - assets/images/Darwaza.jpg
+   - assets/images/Nishabd.jpg
+   - assets/images/RGV_Ki_Aag.png
+   - assets/images/Go.jpg
+   - assets/images/sarkar-raj.jpg
+   - assets/images/contract-movie.jpg
+   - assets/images/Phoonk.jpg
+   - assets/images/adavi_movie.jpg   
+   - assets/images/Drohi.jpg
+   - assets/images/Rakhta_Charitra.jpg
+   - assets/images/Rakhta_Charitra2.jpg
+   - assets/images/KSD_Appalaraju.jpg   
+   - assets/images/Dongala_muta.jpg
+   - assets/images/Not_a_lovestory.jpg
+   - assets/images/Shabri.jpg
+   - assets/images/Department_movie_poster.jpg
+   - assets/images/Boochi_movie.jpg
+   - assets/images/Attack.jpg
+   - assets/images/psycho-telugu.jpg
+   - assets/images/Rowdy.jpg
+   - assets/images/Patta_pagalu.jpg
+   - assets/images/Icream.jpg
+   - assets/images/Anukshanam.jpg
+   - assets/images/Icream2.jpg
+   - assets/images/days365.jpg
+   - assets/images/Mogali.jpg
+   - assets/images/Killing_veerappan.jpg
+   - assets/images/chocobar-movie.png
+   - assets/images/Vangaveeti.jpg
+   - assets/images/Sarkar-3.jpg
+   - assets/images/Officer.jpg
+   - assets/images/Bhairava_Geetha.jpg
+   - assets/images/NTR.jpg
+   - assets/images/cobra-et.jpg
+   - assets/images/Amma_Rajyam_Lo_Kadapa_Biddalu.jpg
+   - assets/images/R0.jpg
+   - assets/images/R1.jpg
+   - assets/images/R2.jpg
+   - assets/images/R3.jpg
+   - assets/images/R4.jpg
+   - assets/images/R5.jpg
+   - assets/images/R6.jpg
+   - assets/images/R7.jpg
+   - assets/images/R8.jpg
+   - assets/images/R9.jpg
+   - assets/images/R10.jpg
+   - assets/images/R11.jpg
+   - assets/images/R12.jpg
+   - assets/images/R13.jpg
+   - assets/images/R14.jpg
+   - assets/images/R15.jpg
+   - assets/images/R16.jpg
+   - assets/images/R17.jpg
+   - assets/images/R18.jpg
+   - assets/images/R19.jpg
+   - assets/images/R20.jpg
+   - assets/images/R21.jpg
+   - assets/images/R22.jpg
+   - assets/images/R23.jpg
+   - assets/images/R24.jpg
+   - assets/images/R25.jpg
+   - assets/images/R26.jpg
+   - assets/images/R27.jpg
+   - assets/images/R28.jpg
+   - assets/images/R29.jpg
+  #  - images/a_dot_ham.jpeg
+
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Billabong
+      fonts:
+        - asset: assets/fonts/Billabong.ttf
+    - family: Twitter
+      fonts:
+        - asset: assets/fonts/icon_twitter.ttf
+    - family: Instagram
+      fonts:
+        - asset: assets/fonts/icon_instagram.ttf  
+    - family: Facebook
+      fonts:
+        - asset: assets/fonts/icon_facebook.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
